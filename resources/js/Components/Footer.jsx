@@ -2,94 +2,62 @@ import { Button } from "antd"
 
 export default function Footer() {
     return (
-        <footer className="py-16" style={{ backgroundColor: "#f7f6f2" }}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/*<div className="text-center mb-12">*/}
-                {/*    <img src="/2.png" alt="modera-logo" className="w-60 h-auto inline mb-5" />*/}
+        <footer className="py-16" style={{ backgroundColor: "#F4F4F4" }}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-[#3C342E]">
 
-                {/*    <div className="max-w-md mx-auto">*/}
-                {/*        <h3 className="text-xl font-semibold mb-4 text-gray-900">Subscribe to our news letters</h3>*/}
-                {/*        <div className="flex">*/}
-                {/*            <input*/}
-                {/*                type="email"*/}
-                {/*                placeholder="Enter your email"*/}
-                {/*                className="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-gray-900"*/}
-                {/*            />*/}
-                {/*            <Button*/}
-                {/*                type="primary"*/}
-                {/*                className="bg-gray-900 hover:bg-gray-800 border-gray-900 px-6 py-3 h-auto rounded-l-none"*/}
-                {/*            >*/}
-                {/*                Subscribe*/}
-                {/*            </Button>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className="py-12 mt-8 text-sm">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
                             <div className="lg:col-span-1">
                                 <div className="flex items-center space-x-2 mb-4">
-                                    <img className="w-40" src="/2.png" alt="Logo" />
+                                    <img className="w-40" src="/logo.png" alt="Logo" />
                                 </div>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="leading-relaxed text-[#3C342E] opacity-90">
                                     To simplify the kitchen supply process for builders—delivering high-quality, custom kitchens at exceptional prices. We streamline the journey from quote to install, helping builders save time, reduce costs, and impress clients without compromising on craftsmanship."
                                 </p>
                             </div>
 
                             <div>
-                                <h3 className="font-semibold text-gray-900 mb-4">Explore</h3>
+                                <h3 className="font-semibold mb-4 text-[#3C342E]">Explore</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a href="/range" className="text-gray-600 hover:text-gray-900">
-                                            Range
-                                        </a>
+                                        <a href="/range" className="opacity-80 hover:opacity-100 text-[#3C342E]">Range</a>
                                     </li>
                                     <li>
-                                        <a href="/gallery" className="text-gray-600 hover:text-gray-900">
-                                            Gallery
-                                        </a>
+                                        <a href="/gallery" className="opacity-80 hover:opacity-100 text-[#3C342E]">Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="/favourites" className="text-gray-600 hover:text-gray-900">
-                                            Favourites
-                                        </a>
+                                        <a href="/favourites" className="opacity-80 hover:opacity-100 text-[#3C342E]">Favourites</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h3 className="font-semibold text-gray-900 mb-4">Categories</h3>
+                                <h3 className="font-semibold mb-4 text-[#3C342E]">Categories</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a href="/range/benchtop" className="text-gray-600 hover:text-gray-900">
-                                            Bench Tops
-                                        </a>
+                                        <a href="/range/benchtop" className="opacity-80 hover:opacity-100 text-[#3C342E]">Bench Tops</a>
                                     </li>
                                     <li>
-                                        <a href="/range/sinks" className="text-gray-600 hover:text-gray-900">
-                                            Sinks
-                                        </a>
+                                        <a href="/range/sinks" className="opacity-80 hover:opacity-100 text-[#3C342E]">Sinks</a>
                                     </li>
                                     <li>
-                                        <a href="/range/handles" className="text-gray-600 hover:text-gray-900">
-                                            Handles
-                                        </a>
+                                        <a href="/range/handles" className="opacity-80 hover:opacity-100 text-[#3C342E]">Handles</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h3 className="font-semibold text-gray-900 mb-4">Connect</h3>
+                                <h3 className="font-semibold mb-4 text-[#3C342E]">Connect</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a href="mailto:support@moderakitchens.co.nz" className="text-gray-600 hover:text-gray-900">
+                                        <a href="mailto:support@moderakitchens.co.nz" className="opacity-80 hover:opacity-100 text-[#3C342E]">
                                             support@moderakitchens.co.nz
                                         </a>
                                     </li>
                                 </ul>
                                 <div className="flex space-x-3 mt-4">
-
-                                    <a href="https://www.instagram.com/moderakitchens/" className="text-gray-400 hover:text-gray-600">
+                                    <a href="https://www.instagram.com/moderakitchens/" className="text-[#3C342E] opacity-70 hover:opacity-100">
                                         <svg
                                             className="w-5 h-5"
                                             fill="currentColor"
@@ -100,16 +68,14 @@ export default function Footer() {
                                         </svg>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+
+                <div className="border-t border-[#3C342E]/30 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-[#3C342E] opacity-80">
                     <div className="flex space-x-6 mb-4 md:mb-0">
-                        <a href="/terms" className="hover:text-gray-700">
-                            Terms & Conditions
-                        </a>
+                        <a href="/terms" className="hover:opacity-100">Terms & Conditions</a>
                     </div>
                     <p>© 2025 all rights reserved</p>
                 </div>

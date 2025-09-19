@@ -140,39 +140,47 @@ export default function ProductsSection({ category = null }) {
                             >
                                 <Card
                                     hoverable
-                                    className="bg-white shadow-sm hover:shadow-lg transition-shadow border-0"
-                                    bodyStyle={{ padding: "24px" }}
+                                    className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+                                    bodyStyle={{ padding: "20px" }}
                                 >
-                                    <div className="relative mb-6">
-                                        <div className="aspect-square overflow-hidden rounded-lg bg-gray-50">
+                                    <div className="relative mb-5">
+                                        <div className="aspect-square overflow-hidden rounded-xl bg-[#F4F4F4]">
                                             <img
                                                 src={product.Image || "/placeholder.svg"}
                                                 alt={product.Title}
-                                                className="w-full h-full object-cover"
+                                                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
                                     </div>
 
-                                    <h3 className="font-serif text-lg font-semibold text-gray-900 mb-2">{product.Title}</h3>
-                                    <p className="text-sm text-gray-600 mb-4">{product.ShortDescription}</p>
+                                    <h3
+                                        className="text-lg font-semibold mb-2"
+                                        style={{ color: "#3E755F", fontFamily: "Nexa, sans-serif" }}
+                                    >
+                                        {product.Title}
+                                    </h3>
+                                    <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                                        {product.ShortDescription}
+                                    </p>
 
-                                    <div className="flex items-center gap-2 ">
+                                    <div className="flex items-center gap-2">
                                         <Button
-                                            type="primary"
+                                            type="default"
                                             onClick={() => addToFavourites(product)}
-                                            className="bg-white hover:!bg-[rgb(248,247,244)] hover:!text-black border-gray-900 px-4 py-2 text-sm transition-colors duration-300 text-black"
+                                            className="flex items-center gap-2 rounded-full border border-[#3E755F] text-[#3E755F] hover:!bg-[#3E755F] hover:!text-white px-4 py-2 text-sm transition-colors duration-300"
                                         >
-                                            <Heart className="h-5 w-5 text-gray-400" />Favourites
+                                            <Heart className="h-4 w-4" /> Favourites
                                         </Button>
                                         <Button
                                             type="primary"
                                             onClick={() => handleDetailsClick(product.Slug)}
-                                            className="bg-gray-900 w-full hover:!bg-[rgb(248,247,244)] hover:!text-black border-gray-900 px-4 py-2 text-sm transition-colors duration-300"
+                                            className="rounded-full bg-[#3E755F] border-none hover:!bg-[#2f5a49] px-6 py-2 text-sm transition-colors duration-300"
                                         >
                                             Details
                                         </Button>
                                     </div>
                                 </Card>
+
                             </div>
                         ))}
                     </div>

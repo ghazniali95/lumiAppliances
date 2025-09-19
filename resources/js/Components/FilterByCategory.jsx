@@ -46,28 +46,32 @@ export default function FilterByCategory({categorySlug = null}) {
 
     return (
         <section className="bg-white">
-            <div className="flex flex-col gap-4 mb-8 p-6 rounded-lg" style={{ backgroundColor: "#f8f7f4" }}>
-                <label className="text-sm font-medium text-gray-700">Filter by Category</label>
+            <div
+                className="flex flex-col gap-4 mb-8 p-6 rounded-2xl shadow-sm"
+                style={{ backgroundColor: "#F8F7F4" }}
+            >
+                <label
+                    className="text-sm font-semibold tracking-wide"
+                    style={{ color: "#3A2E2E" }}
+                >
+                    Filter by Category
+                </label>
+
                 {categoriesLoading ? (
                     <div className="flex justify-center py-4">
                         <Spin size="default" />
                     </div>
                 ) : (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-3">
                         {categories.map((category) => (
                             <Button
                                 key={category.name}
                                 onClick={() => handleCategoryChange(category)}
-                                className={`px-6 py-2 rounded-full border-0 font-medium transition-all duration-200 ${
+                                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-sm ${
                                     selectedCategory === category.name
-                                        ? "bg-gray-800 text-white hover:bg-gray-700"
-                                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                                        ? "bg-[#3A2E2E] text-white"
+                                        : "bg-white text-[#3A2E2E] border border-[#3A2E2E] hover:!bg-[#3A2E2E] hover:!text-white"
                                 }`}
-                                style={{
-                                    backgroundColor: selectedCategory === category.name ? "#1f2937" : "#e5e7eb",
-                                    color: selectedCategory === category.name ? "white" : "#374151",
-                                    border: "none",
-                                }}
                             >
                                 {category.name}
                             </Button>
@@ -76,5 +80,7 @@ export default function FilterByCategory({categorySlug = null}) {
                 )}
             </div>
         </section>
+
+
     )
 }
