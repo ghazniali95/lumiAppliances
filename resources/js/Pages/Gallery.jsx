@@ -135,28 +135,28 @@ const Gallery = ({slug = null}) => {
             <Header />
 
             {/* Hero Banner */}
-            <section
-                className="relative h-screen flex items-center overflow-hidden"
-                style={{ backgroundColor: "#f5f3f0" }}
-            >
+            {/* Hero Banner */}
+            <section className="relative h-[85vh] flex items-center justify-center overflow-hidden bg-[#1d1512]">
                 <div className="absolute inset-0">
                     <img
-                        src="/gallery.jpg"
-                        alt="Kitchen range showcase"
-                        className="w-full h-full object-cover"
+                        src="/luxury-kitchen-appliances.png"
+                        alt="Lumi Appliances Gallery"
+                        className="w-full h-full object-cover opacity-70"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                    <div className="absolute inset-0 bg-[#1d1512] bg-opacity-60"></div>
                 </div>
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight text-white">
-                        Kitchen Inspiration Gallery
+
+                <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+                        Lumi Inspiration Gallery
                     </h1>
-                    <p className="text-lg text-white">
-                        Explore modern, timeless, and functional kitchen designs crafted with
-                        precision and style
+                    <p className="text-lg md:text-xl mb-8 leading-relaxed text-gray-100">
+                        Explore timeless designs and modern home appliances that blend elegance,
+                        innovation, and functionality — curated for every lifestyle.
                     </p>
                 </div>
             </section>
+
 
             {/* Filter Bar */}
             <section className="py-8 bg-white ">

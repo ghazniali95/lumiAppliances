@@ -182,32 +182,23 @@ export default function RangePage({categorySlug = null}) {
             </Head>
             <Header />
 
-            <section className="relative h-screen flex items-center overflow-hidden" style={{ backgroundColor: "#f5f3f0" }}>
+            {/* Hero Section */}
+            <section className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden bg-[#1d1512]">
                 <div className="absolute inset-0">
-                    <img src="/range-hero-img.jpg" alt="Kitchen range showcase" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                    <img
+                        src="/Lumi%20-%20Dishwasher1%20-%20Logo.jpg"
+                        alt="Lumi Appliances Range"
+                        className="w-full h-full object-cover opacity-60"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 </div>
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight text-white">
-                        The Modera Experience
+                <div className="relative z-10 max-w-4xl px-6">
+                    <h1  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+                        The Lumi Experience
                     </h1>
-                    <p className="text-lg text-left w-3/4 mx-auto text-white">
-                        Our Modera kitchen range is available exclusively through builders - whether it’s a new build or a renovation project. This is how we are able to manage the cost of your kitchen accordingly.<br />
-                        <br />
-                        Our team work directly with your builder as the key point of contact, ensuring your kitchen is delivered seamlessly and efficiently. To qualify for the Modera range:<br />
-                        <br />
-                        <ul>
-                            <li>
-                                • Your kitchen project needs to be managed by a builder.
-                            </li>
-                            <li>
-                                • All enquiries are directed back to your builder to keep the process clear and efficient.
-                            </li>
-                        </ul>
-
-                        <br />
-
-                        This builder-led approach helps create a smooth experience, with everything managed in one place.
+                    <p className="text-lg md:text-xl mb-8 leading-relaxed text-gray-100">
+                        Discover our premium collection of home appliances, designed to bring elegance,
+                        innovation, and efficiency into every corner of your home.
                     </p>
                 </div>
             </section>
