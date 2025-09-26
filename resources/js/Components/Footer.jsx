@@ -36,13 +36,13 @@ export default function Footer() {
                                 <h3 className="font-semibold mb-4 text-[#3C342E]">Categories</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a href="/range/benchtop" className="opacity-80 hover:opacity-100 text-[#3C342E]">Bench Tops</a>
+                                        <a href="/range/oven" className="opacity-80 hover:opacity-100 text-[#3C342E]">Oven</a>
                                     </li>
                                     <li>
-                                        <a href="/range/sinks" className="opacity-80 hover:opacity-100 text-[#3C342E]">Sinks</a>
+                                        <a href="/range/dishwasher" className="opacity-80 hover:opacity-100 text-[#3C342E]">Dishwasher</a>
                                     </li>
                                     <li>
-                                        <a href="/range/handles" className="opacity-80 hover:opacity-100 text-[#3C342E]">Handles</a>
+                                        <a href="/range/rangehood" className="opacity-80 hover:opacity-100 text-[#3C342E]">Rangehood</a>
                                     </li>
                                 </ul>
                             </div>
@@ -52,21 +52,21 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     <li>
                                         <a href="mailto:support@moderakitchens.co.nz" className="opacity-80 hover:opacity-100 text-[#3C342E]">
-                                            support@moderakitchens.co.nz
+                                            support@lumiappliances.co.nz
                                         </a>
                                     </li>
                                 </ul>
                                 <div className="flex space-x-3 mt-4">
-                                    <a href="https://www.instagram.com/moderakitchens/" className="text-[#3C342E] opacity-70 hover:opacity-100">
-                                        <svg
-                                            className="w-5 h-5"
-                                            fill="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z" />
-                                        </svg>
-                                    </a>
+                                    {/*<a href="https://www.instagram.com/moderakitchens/" className="text-[#3C342E] opacity-70 hover:opacity-100">*/}
+                                    {/*    <svg*/}
+                                    {/*        className="w-5 h-5"*/}
+                                    {/*        fill="currentColor"*/}
+                                    {/*        viewBox="0 0 24 24"*/}
+                                    {/*        xmlns="http://www.w3.org/2000/svg"*/}
+                                    {/*    >*/}
+                                    {/*        <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z" />*/}
+                                    {/*    </svg>*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
