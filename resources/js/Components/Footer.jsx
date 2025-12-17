@@ -29,6 +29,9 @@ export default function Footer() {
                                     <li>
                                         <a href="/favourites" className="opacity-80 hover:opacity-100 text-[#3C342E]">Favourites</a>
                                     </li>
+                                    <li>
+                                        <a href="/documentation" className="opacity-80 hover:opacity-100 text-[#3C342E]">Documentation</a>
+                                    </li>
                                 </ul>
                             </div>
 

@@ -60,8 +60,31 @@ Route::get('about', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+Route::get('warranty', function () {
+    return Inertia::render('Warranty', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+Route::get('documentation', function () {
+    return Inertia::render('Documentation', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 Route::get('privacy-policy', function () {
     return Inertia::render('PrivacyPolicy', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});Route::get('contact', function () {
+    return Inertia::render('Contact', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,

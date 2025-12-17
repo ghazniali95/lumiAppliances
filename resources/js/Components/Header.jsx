@@ -19,11 +19,14 @@ export default function Header() {
                         <a href="/range" className="text-black hover:text-white transition-colors">
                             Range
                         </a>
-                        <a href="/gallery" className="text-black hover:text-white transition-colors">
-                            Gallery
+                        <a href="/contact" className="text-black hover:text-white transition-colors">
+                            Contact
                         </a>
                         <a href="/about" className="text-black hover:text-white transition-colors">
                             About us
+                        </a>
+                        <a href="/warranty" className="text-black hover:text-white transition-colors">
+                            Warranty
                         </a>
                         <a href="/enquiry" className="text-black hover:text-white transition-colors">
                             Enquiry
@@ -55,11 +58,14 @@ export default function Header() {
                         <a href="/range" className="text-black hover:text-white block px-3 py-2 text-base">
                             Range
                         </a>
-                        <a href="/gallery" className="text-black hover:text-white block px-3 py-2 text-base">
-                            Gallery
+                        <a href="/contact" className="text-black hover:text-white block px-3 py-2 text-base">
+                            Contact
                         </a>
                         <a href="/about" className="text-black hover:text-white block px-3 py-2 text-base">
                             About us
+                        </a>
+                        <a href="/warranty" className="text-black hover:text-white block px-3 py-2 text-base">
+                            Warranty
                         </a>
                         <a href="/enquiry" className="text-black hover:text-white block px-3 py-2 text-base">
                             Enquiry

@@ -147,19 +147,7 @@ export default function HomePage() {
                         </p>
                     </div>
 
-                    <GallerySection />
 
-                    <div className="text-center mt-8">
-                        <Button
-                            href="/gallery"
-                            type="primary"
-                            size="large"
-                            className="px-6 py-3 h-auto text-base font-semibold"
-                            style={{ background: BRAND.deeptruffle, borderColor: BRAND.deeptruffle }}
-                        >
-                            View Full Gallery
-                        </Button>
-                    </div>
                 </div>
             </section>
 
