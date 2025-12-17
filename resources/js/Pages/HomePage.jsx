@@ -1,18 +1,18 @@
 import { Button } from "antd"
 import Header from "@/Components/Header.jsx"
 import Footer from "@/Components/Footer.jsx"
-import ProductsSection from "@/Components/ProductsSection";
-import FilterByCategory from "@/Components/FilterByCategory.jsx";
-import GallerySection from "@/Components/GallerySection.jsx";
-import { Head } from "@inertiajs/react";
+import ProductsSection from "@/Components/ProductsSection"
+import FilterByCategory from "@/Components/FilterByCategory.jsx"
+import GallerySection from "@/Components/GallerySection.jsx"
+import { Head } from "@inertiajs/react"
 
 // Lumi Brand Colors
 const BRAND = {
-    deeptruffle: "#3E755F",   // Primary
-    chalkDust: "#F4F4F4",  // Light background
+    deeptruffle: "#3E755F", // Primary
+    chalkDust: "#F4F4F4", // Light background
     deepTruffle: "#3C342E", // Dark text
-    wildSage: "#448C6A",   // Accent
-};
+    wildSage: "#448C6A", // Accent
+}
 
 export default function HomePage() {
     return (
@@ -22,60 +22,39 @@ export default function HomePage() {
             </Head>
             <Header />
 
-
             {/* HERO SECTION */}
             <section className="relative h-screen flex items-center justify-center text-center bg-white">
                 <div className="absolute inset-0">
-                    <img
-                        src="/hero-image.jpg"
-                        alt="Modern Home Appliances"
-                        className="w-full h-full object-cover"
-                    />
+                    <img src="/hero-image.jpg" alt="Modern Home Appliances" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 </div>
 
                 <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-                        style={{ color: "white" }}
-                    >
-                        Modern Appliances, Designed for Living
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style={{ color: "white" }}>
+                        Appliances Designed for Modern Kiwi Homes
                     </h1>
                     <p className="text-lg md:text-xl mb-8 leading-relaxed text-gray-100">
-                        Efficient, reliable, and beautifully crafted — LUMI brings innovation to your kitchen with
-                        energy-smart ovens, quiet hoods, and low-profile hobs.
+                        Smart, dependable appliances that look great and make home life easier.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button
-                            href="/range"
-                            type="primary"
-                            size="large"
-                            className="px-6 py-3 h-auto text-base font-semibold"
-                            style={{ background: BRAND.deeptruffle, borderColor: BRAND.deeptruffle }}
-                        >
-                            Shop Best Sellers
-                        </Button>
-                        <Button
-                            href="/dealers"
-                            type="default"
-                            size="large"
-                            className="px-6 py-3 h-auto text-base"
-                        >
-                            Find a Dealer
-                        </Button>
-                    </div>
                 </div>
             </section>
 
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+                <div className="max-w-4xl mx-auto text-center">
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        At Lumi, we want to make everyday living a bit simpler. Our appliances are chosen with New Zealand homes in
+                        mind, keeping things easy to use and clean-looking so they fit nicely into most modern kitchens. The idea is
+                        that families can just get on with cooking, cleaning, and living without having to figure out complicated
+                        features.
+                    </p>
+                </div>
+            </section>
 
             {/* WHY CHOOSE LUMI SECTION */}
             <section className="py-20 bg-white">
                 <div className="max-w-6xl mx-auto px-6 text-center">
-                    <h2
-                        className="text-3xl md:text-4xl font-bold mb-12"
-                        style={{ color: BRAND.deepTruffle }}
-                    >
-                        Why Choose LUMI?
+                    <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: BRAND.deepTruffle }}>
+                        Why Choose Lumi?
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -89,10 +68,11 @@ export default function HomePage() {
                                 />
                             </div>
                             <h3 className="text-xl font-semibold mb-4" style={{ color: BRAND.deeptruffle }}>
-                                Energy Efficient
+                                Practical & Everyday Use
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Our appliances are designed with cutting-edge technology to save energy and lower your bills.
+                                Every Lumi appliance is selected for practicality and everyday use. Straightforward to operate,
+                                consistent in performance, and built to last.
                             </p>
                         </div>
 
@@ -106,10 +86,11 @@ export default function HomePage() {
                                 />
                             </div>
                             <h3 className="text-xl font-semibold mb-4" style={{ color: BRAND.deeptruffle }}>
-                                Sustainable Design
+                                Clean & Cohesive Design
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                We use eco-friendly materials and processes to reduce environmental impact without compromising quality.
+                                Clean lines, simple controls, and a cohesive look across the whole range—Lumi fits seamlessly into new
+                                builds and renovations alike.
                             </p>
                         </div>
 
@@ -123,10 +104,11 @@ export default function HomePage() {
                                 />
                             </div>
                             <h3 className="text-xl font-semibold mb-4" style={{ color: BRAND.deeptruffle }}>
-                                Trusted Quality
+                                Simple & Dependable
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Built to last with premium craftsmanship, every LUMI product is backed by years of expertise.
+                                From uncomplicated installation to clear user operation, Lumi keeps things simple. A dependable choice
+                                for builders and confidence for new homeowners.
                             </p>
                         </div>
                     </div>
@@ -138,9 +120,12 @@ export default function HomePage() {
                 <div className="item-center justify-center">
                     <div className=" items-center text-center justify-between mb-12">
                         <div>
-                            <h2 className="text-5xl font-bold mb-4" style={{ color: BRAND.deepTruffle }}>Our Appliances</h2>
+                            <h2 className="text-5xl font-bold mb-4" style={{ color: BRAND.deepTruffle }}>
+                                Our Appliances
+                            </h2>
                             <p className="text-lg text-gray-600 text-center">
-                                Explore our full collection of ovens, hobs, hoods, and more — each designed with performance and elegance.
+                                Explore our full collection of ovens, hobs, hoods, and more — each designed with performance and
+                                elegance.
                             </p>
                         </div>
                     </div>
@@ -154,9 +139,11 @@ export default function HomePage() {
             <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: BRAND.chalkDust }}>
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-5xl font-bold mb-6" style={{ color: BRAND.deepTruffle }}>See What's Possible with LUMI</h2>
+                        <h2 className="text-5xl font-bold mb-6" style={{ color: BRAND.deepTruffle }}>
+                            Who We Serve
+                        </h2>
                         <p className="text-lg text-gray-600 mb-8">
-                            Discover inspiration from our stunning appliance installations.
+                            We work with residential developers, group home builders, and procurement teams.
                         </p>
                     </div>
 
@@ -180,11 +167,9 @@ export default function HomePage() {
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-5xl font-bold mb-6 leading-tight" style={{ color: BRAND.deepTruffle }}>
-                        Your Home, Powered by LUMI.
+                        Lumi Appliances New Zealand
                     </h2>
-                    <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Whether you are upgrading or building new, LUMI makes it simple to create a modern kitchen.
-                    </p>
+                    <p className="text-lg text-gray-600 mb-8 leading-relaxed">Helping create better everyday living with simple, reliable kitchen appliances.</p>
                     <Button
                         href="/enquiry"
                         type="primary"
